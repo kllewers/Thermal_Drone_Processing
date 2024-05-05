@@ -5,8 +5,8 @@ from scipy import stats
 from matplotlib import pyplot as plt
 
 
-image = cv2.imread('/Users/kitlewers/Desktop/drone_project_adler/images/DJI_0862.JPG')
-image2 = cv2.imread('/Users/kitlewers/Desktop/drone_project_adler/images/DJI_0860.JPG')
+image = cv2.imread('/Users/kitlewers/Desktop/drone_project_adler/original_images/DJI_0862.JPG')
+image2 = cv2.imread('/Users/kitlewers/Desktop/drone_project_adler/original_images/DJI_0860.JPG')
 
 # Convert it to grayscale
 gray_image = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
@@ -27,13 +27,11 @@ normalized_image2 = gray_image2 / 255.0
 # Calculate statistics for the first image
 mean1 = np.mean(normalized_image)
 median1 = np.median(normalized_image)
-mode1 = np.mode(normalized_image)
 
 
 # Calculate statistics for the second image
 mean2 = np.mean(normalized_image2)
 median2 = np.median(normalized_image2)
-mode2 = np.mode(normalized_image2)
 
 
 # Print statistics
