@@ -31,6 +31,10 @@ exif_data = get_exif_data(original_image_path)
 new_image_path = '/Users/kitlewers/Desktop/drone_project_adler/converted_image/DJI_0860.JPG'
 save_exif_data(new_image_path, gray_image, exif_data)
 
+folder_path = '/Users/kitlewers/Desktop/drone_project_adler/original_images'
+
+
+
 
 
 
